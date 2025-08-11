@@ -5,7 +5,7 @@
             font-family: 'Poppins', sans-serif;
         }
         body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+           background: linear-gradient(317deg, rgb(85, 103, 162) 0%, rgb(182, 195, 203) 50%, rgba(72, 65, 160, 1) 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -13,20 +13,18 @@
             padding: 20px;
         }
         .container {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(219, 207, 207, 0.9);
             border-radius: 15px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
             padding: 40px;
             width: 100%;
             max-width: 450px;
             transform: scale(0.95);
             transition: transform 0.3s ease;
         }
-        .container:hover {
-            transform: scale(1);
-        }
+        
         h1 {
-            color: #333;
+            color: #726c6c;
             text-align: center;
             margin-bottom: 30px;
             font-weight: 600;
@@ -54,7 +52,7 @@
         button {
             width: 100%;
             padding: 15px;
-            background: linear-gradient(to right, #667eea, #764ba2);
+            background: linear-gradient(to right, #9b9faf, #000000);
             color: white;
             border: none;
             border-radius: 8px;

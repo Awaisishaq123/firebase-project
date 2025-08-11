@@ -90,12 +90,14 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebas
                   <button class="btn btn-sm btn-outline-warning me-2" 
                           onclick="editProduct('${docSnap.id}', '${data.name}', '${data.price}', '${data.description}', '${data.image}')"
                           data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
-                    <i class="fas fa-edit"></i>
+                    
+                    Edit
                   </button>
                   <button class="btn btn-sm btn-outline-danger" 
                           onclick="deleteProduct('${docSnap.id}')"
                           data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
-                    <i class="fas fa-trash"></i>
+                    Delete
+                        
                   </button>
                 </div>
               </div>

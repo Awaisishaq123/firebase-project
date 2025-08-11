@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="addtocart.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="addtocart.css">
 </head>
+
 <body>
 
-   <button 
-   id="goback"
-  style="
+  <button id="goback" style="
     padding: 12px 24px;
     font-size: 1rem;
     font-weight: 600;
     color: white;
-    background: linear-gradient(45deg, #4361ee, #3a0ca3);
+    /* background: linear-gradient(45deg, #4361ee, #3a0ca3); */
+           background: linear-gradient(317deg, rgba(63, 103, 234, 1) 0%, rgba(76, 153, 200, 1) 50%, rgba(72, 65, 160, 1) 100%);
+
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -26,12 +28,10 @@
     overflow: hidden;
     z-index: 1;
     margin: 10px;
-  "
-  onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 7px 20px rgba(67, 97, 238, 0.4)'"
-  onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(67, 97, 238, 0.3)'"
->
-  Go to User-dashboard
-  <span style="
+  " onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 7px 20px rgba(67, 97, 238, 0.4)'"
+    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(67, 97, 238, 0.3)'">
+    Go to User-dashboard
+    <span style="
     position: absolute;
     top: 0;
     left: -100%;
@@ -41,17 +41,18 @@
     transition: 0.5s;
     z-index: -1;
   "></span>
-</button>
-    <div class="cart-header">
-        <h1>Your Shopping Cart</h1>
-        <p>Review and manage your items</p>
-    </div>
+  </button>
+  <div class="cart-header">
+    <h1 >Your Shopping Cart</h1>
+    <p style="color: rgb(105, 145, 233);">Review and manage your items</p>
+  </div>
 
 
-    <div id="loadcart"></div>
+  <div id="loadcart"></div>
 
-    <script type="module" src="Addtocart.js"></script>
+  <script type="module" src="Addtocart.js"></script>
 
 
-    </body>
+</body>
+
 </html>

@@ -6,7 +6,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebas
           getDocs,
           doc,
           getDoc,
-          onSnapshot
+          onSnapshot,
+        
         } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
         // Firebase Config
@@ -18,7 +19,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebas
     messagingSenderId: "1000959311145",
     appId: "1:1000959311145:web:059f9b0de50a095a45cb38",
     measurementId: "G-2CX47QTV51"
-  };;
+  };
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
@@ -79,7 +80,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebas
             setTimeout(() => {
                 cartitem.style.transform = "scale(1)";
                 window.location.href = "Addtocart.html";
-            }, 150);
+            }, 1500);
         });
 
         
@@ -132,5 +133,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebas
             }
         }
 
+
+
+        
         // Make addtocart available globally for onclick
         window.addtocart = addtocart;

@@ -1,5 +1,5 @@
 :root {
-      --primary-color: #4361ee;
+      --primary-color: black;
       --secondary-color: #3f37c9;
       --accent-color: #4cc9f0;
       --dark-color: #2b2d42;
@@ -7,15 +7,21 @@
     }
     
     body {
-      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      /* background: linear-gradient(135deg, #859fc6 0%, #484e57 100%);
+       */
+       background-color: #191627;
       min-height: 100vh;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    
+    .h2{
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+    }
     .navbar-brand {
       font-weight: 700;
       color: var(--primary-color);
-    }
+      /* color: black; */
+    } 
     
     .btn-primary {
       background-color: var(--primary-color);
@@ -29,11 +35,11 @@
     
     .card {
       border: none;
-      border-radius: 15px;
+      border-radius: 15px  ;
       overflow: hidden;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 20px rgba(233, 229, 229, 0.1);
       transition: all 0.3s ease;
-      background: white;
+      background: #c1c2c5;
     }
     
     .card:hover {
@@ -45,26 +51,31 @@
       object-fit: cover;
       transition: transform 0.5s ease;
     }
-    
-    .card:hover .card-img-top {
-      transform: scale(1.05);
-    }
+/*     
+    .card:hover .card-img-top { */
+      /* transform: scale(1.05); */
+    /* } */
     
     .modal-content {
       border-radius: 15px;
       border: none;
       box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      background-color: rgb(166, 166, 166);
     }
     
     .form-control {
       border-radius: 10px;
       padding: 12px 15px;
-      border: 1px solid #e0e0e0;
+      /* border: 1px solid #050606; */
     }
     
     .form-control:focus {
-      border-color: var(--primary-color);
-      box-shadow: 0 0 0 0.25rem rgba(67, 97, 238, 0.25);
+      border-color: color(blue);
+      box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.737);
+    }
+    .font-weight{
+      font-size: larger;
+      color: #6c757d;
     }
     
     .product-price {
@@ -108,6 +119,8 @@
       background: radial-gradient(circle, rgba(67, 97, 238, 0.05) 0%, rgba(255,255,255,0) 70%);
       animation: pulse 15s infinite alternate;
     }
+
+    /*.......................... modal-styling............... */
     
     @keyframes pulse {
       0% {

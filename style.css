@@ -6,7 +6,6 @@
         }
         body {
            background: linear-gradient(317deg, rgba(63, 103, 234, 1) 0%, rgba(76, 153, 200, 1) 50%, rgba(72, 65, 160, 1) 100%);
-
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -23,9 +22,7 @@
             transform: scale(0.95);
             transition: transform 0.3s ease;
         }
-        /* .container:hover {
-            transform: scale(1);
-        } */
+
         h1 {
             color: #fff;
             text-align: center;
@@ -47,7 +44,7 @@
         input:focus {
             border-color: darkblue;
             outline: none;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.5);
         }
         input::placeholder {
             color: #aaa;
@@ -55,7 +52,6 @@
         button {
             width: 100%;
             padding: 15px;
-            /* background: linear-gradient(to right, #667eea, #764ba2); */
             background-color: black;
             color: white;
             border: none;
