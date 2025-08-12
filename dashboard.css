@@ -1,4 +1,4 @@
-:root {
+/* :root {
       --primary-color: black;
       --secondary-color: #3f37c9;
       --accent-color: #4cc9f0;
@@ -7,20 +7,25 @@
     }
     
     body {
-      /* background: linear-gradient(135deg, #859fc6 0%, #484e57 100%);
-       */
+      
        background-color: #191627;
       min-height: 100vh;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    } */
+    /* .ig{
+      color: #f8f9fa;
     }
     .h2{
       color: white;
       font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
     }
     .navbar-brand {
-      font-weight: 700;
-      color: var(--primary-color);
-      /* color: black; */
+      font-weight: bold;
+      font-size: 900 !important;
+      color: white;
+      
+      
     } 
     
     .btn-primary {
@@ -50,13 +55,13 @@
     .card-img-top {
       object-fit: cover;
       transition: transform 0.5s ease;
-    }
+    } */
 /*     
     .card:hover .card-img-top { */
       /* transform: scale(1.05); */
     /* } */
     
-    .modal-content {
+    /* .modal-content {
       border-radius: 15px;
       border: none;
       box-shadow: 0 10px 30px rgba(0,0,0,0.2);
@@ -66,9 +71,9 @@
     .form-control {
       border-radius: 10px;
       padding: 12px 15px;
-      /* border: 1px solid #050606; */
-    }
     
+    } */
+/*     
     .form-control:focus {
       border-color: color(blue);
       box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.737);
@@ -118,11 +123,11 @@
       height: 200%;
       background: radial-gradient(circle, rgba(67, 97, 238, 0.05) 0%, rgba(255,255,255,0) 70%);
       animation: pulse 15s infinite alternate;
-    }
+    } */
 
     /*.......................... modal-styling............... */
     
-    @keyframes pulse {
+    /* @keyframes pulse {
       0% {
         transform: scale(1);
       }
@@ -141,4 +146,161 @@
       font-size: 5rem;
       margin-bottom: 20px;
       color: #dee2e6;
-    }
+    } */
+
+    :root {
+  --primary-color: #0ef6cc; /* Neon Cyan */
+  --secondary-color: #3f37c9; /* Purple Blue */
+  --accent-color: #ff6ec7; /* Pink Accent */
+  --dark-color: #1a1a2e;
+  --light-color: #f8f9fa;
+}
+
+body {
+  background: linear-gradient(135deg, #191627 0%, #0f0c29 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--light-color);
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem !important;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
+
+/* Headings */
+.h2 {
+  color: var(--light-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--primary-color);
+  border: none;
+  color: #000;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 20px rgba(0, 255, 200, 0.15);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(255, 110, 199, 0.25);
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 15px;
+  border: none;
+  background: rgba(0, 0, 0, 0.85);
+  color: var(--light-color);
+  backdrop-filter: blur(10px);
+}
+
+/* Form Controls */
+.form-control {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px var(--primary-color);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Product Price */
+.product-price {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Floating Button */
+.floating-btn {
+  background: var(--accent-color);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.floating-btn:hover {
+  background: var(--primary-color);
+  transform: scale(1.05);
+}
+
+/* Empty State */
+.empty-state {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.empty-state i {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ========================= */
+/* Responsive Design Tweaks */
+/* ========================= */
+
+/* For tablets and smaller laptops */
+@media (max-width: 992px) {
+  .navbar-brand {
+    font-size: 1.2rem !important;
+  }
+  .h2 {
+    font-size: 1.4rem;
+  }
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 576px) {
+  body {
+    padding: 0 10px;
+  }
+  .navbar-brand {
+    font-size: 1rem !important;
+  }
+  .h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .btn-primary {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .card {
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .product-price {
+    font-size: 1rem;
+  }
+  .floating-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}

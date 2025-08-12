@@ -8,21 +8,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="userdashboard.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<style>
+    #logoutBtn{
+background:#0ef6cc ;
+color: #1a1a2e;
+ padding: 0.6rem 1.5rem;
+  border: none;
+   border-radius: 50px; 
+   cursor: pointer;
+    }
+    #logoutBtn:hover{
+        background-color: #EA6CC6;
+        color: #fff;
 
+    }
+</style>
 </head>
 <body>
     <header class="dashboard-header">
-        <h1>User Dashboard</h1>
+       <i class="fa-solid fa-users"></i><h1>User Dashboard</h1>
         <div style="display: flex; gap: 10px;">
         <button id="addrocart">
-            <!-- <i class="fas fa-shopping-cart"></i> -->
+            <i class="fas fa-shopping-cart"></i>
             <span>Cart</span>
             <span class="cart-count" 
                
             >0</span>
         </button>
         <!-- Logout Button -->
-        <button  id="logoutBtn" style="background: crimson; color: white; padding: 0.6rem 1.5rem; border: none; border-radius: 50px; cursor: pointer;">
+<button  id="logoutBtn">
             Logout
         </button>
         </div>

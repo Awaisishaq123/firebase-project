@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Modern Product Dashboard</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="dashboard.css">
- 
+  <style>
+    #logoutBtn {
+      color: white;
+      padding: 0.6rem 1.5rem;
+      border: none;
+      border-radius: 35px;
+      cursor: pointer;
+      background: linear-gradient(317deg, rgba(63, 103, 234, 1) 0%, rgba(76, 153, 200, 1) 50%, rgba(72, 65, 160, 1) 100%);
+
+    }
+  </style>
 </head>
+
 <body>
   <div class="animated-bg"></div>
-  
-  <nav class="navbar navbar-expand-lg navbar-light bg-secondary shadow-sm mb-4">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark shadow-sm mb-4">
     <div class="container">
       <a class="navbar-brand animate__animated animate__fadeInLeft" href="#">
-        <i class="fa-solid fa-republican"></i> Dashboard
+        <!-- <i class="fa-solid fa-republican ig"></i> -->
+        <!-- <i class="fas fa-bars"></i> -->
+        <i class="fas fa-home"></i>
+        <!-- <img src="logo.png" alt="Logo" style="height:24px;"> -->
+
+
+        Dashboard
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
+      </button>
+      <button id="logoutBtn">
+        Logout
       </button>
     </div>
   </nav>
 
   <div class="container">
     <div class="d-flex justify-content-between align-items-center mb-4 animate__animated animate__fadeInDown">
-      <h2 class="mb-0 h2">Your Products</h2>
+      <h2 class="mb-0 h2">Your Products...</h2>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal">
         <i class="fas fa-plus me-2"></i>Add Product
       </button>
     </div>
 
     <div id="productList" class="row g-4"></div>
-    
+
     <div id="emptyState" class="empty-state animate__animated animate__fadeIn">
       <i class="fas fa-box-open"></i>
       <h3>No Products Found</h3>
@@ -42,7 +63,8 @@
   </div>
 
   <!-- Add Product Button (Floating) -->
-  <button type="button" class="floating-btn btn btn-primary d-lg-none" data-bs-toggle="modal" data-bs-target="#productModal">
+  <button type="button" class="floating-btn btn btn-primary d-lg-none" data-bs-toggle="modal"
+    data-bs-target="#productModal">
     <i class="fas fa-plus"></i>
   </button>
 
@@ -58,12 +80,12 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body" style="color: white;">
-          <input  type="hidden" id="productId" />
+          <input type="hidden" id="productId" />
           <div class="mb-3 font-weight">
             <label for="name" class="form-label">Product Name</label>
             <input type="text" id="name" class="form-control" placeholder="Enter product name" />
           </div>
-          <div class="mb-3 font-weight" >
+          <div class="mb-3 font-weight">
             <label for="price" class="form-label">Price</label>
             <input type="text" id="price" class="form-control" placeholder="Enter price" />
           </div>
@@ -90,6 +112,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-<script type="module" src="dashboard.js"></script>
-  </body>
+  <script type="module" src="dashboard.js"></script>
+</body>
+
 </html>
