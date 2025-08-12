@@ -25,10 +25,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebas
     const db = getFirestore(app);
 
     // Initialize Bootstrap tooltips
-    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-    tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl);
-    });
+    
 
     // ADD PRODUCT
     document.getElementById("addBtn").addEventListener("click", async () => {

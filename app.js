@@ -3,7 +3,6 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
 const firebaseConfig = {
@@ -30,6 +29,7 @@ if (sbtn) {
         icon: "error",
         title: "Oops...",
         text: "Please fill in all fields!",
+        timer:2000,
       });
       return;
     }
@@ -42,7 +42,7 @@ if (sbtn) {
           title: "Success!",
           text: "Account created successfully!",
           showConfirmButton: false,
-          timer: 1500,
+          timer: 2000,
         }).then(() => {
           window.location.href = "login.html";
         });
@@ -96,7 +96,10 @@ if (lbtn) {
           timer: 1500,
           color: "black",
         }).then(() => {
-          if (email === "admin1@gmail.com" && password === "123456") {
+          if (
+            (email === "admin1@gmail.com" && password === "123456") ||
+            (email === "admin@gmail.com" && password === "042111")
+          ) {
             window.location.href = "dashboard.html";
           } else {
             window.location.href = "userdashboard.html";
