@@ -155,6 +155,14 @@ let cartitem = document.getElementById("addrocart");
 if (cartitem) {
   cartitem.addEventListener("click", () => {
     cartitem.style.transform = "scale(0.95)";
+ Swal.fire({
+          icon: "success",
+          title: "product success",
+          text: "Your have been successfully!",
+          showConfirmButton: false,
+          timer: 1000,
+        })
+
     setTimeout(() => {
       cartitem.style.transform = "scale(1)";
       window.location.href = "Addtocart.html";
@@ -166,6 +174,7 @@ if (cartitem) {
 async function addtocart(id, name, price, description, image) {
   try {
     const user = auth.currentUser;
+    // console.log(user)
     if (!user) {
       Swal.fire({
         icon: "warning",

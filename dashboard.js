@@ -31,8 +31,6 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth();
 
-// Initialize Bootstrap tooltips
-
 // Logout Button
 let logoutBtn = document.getElementById("logoutBtn");
 
@@ -133,6 +131,7 @@ function fetchProducts() {
                   <p class="card-text text-muted">${data.description}</p>
                 </div>
                 <div class="card-footer bg-transparent border-0">
+                        // edit ka button
                   <button class="btn btn-sm btn-outline-warning me-2" 
                           onclick="editProduct('${docSnap.id}', '${
           data.name
@@ -145,7 +144,6 @@ function fetchProducts() {
                           onclick="deleteProduct('${docSnap.id}')"
                           data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
                     Delete
-                        
                   </button>
                 </div>
               </div>
